@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayo's Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous" ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo1.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>  
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>  
+        </nav>
+        <div class="header-text">
+          <p>WEB Designer</p>
+          <h1>Hello, I am <span> Adeyele</span> <br />Ayodeji from Nigeria</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" alt="my image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                Hi, I'm a full web developer with over 2 years of experience in creating and maintaining websites. 
+                I have strong skills in HTML, CSS, JavaScript, MySQL, and PHP, which allow me to build websites that are visually appealing, user-friendly, 
+                and efficient. I am also learning how to use frameworks such as React JS and Django to create dynamic and interactive web applications. 
+                I'm always eager to learn new technologies and tools that can enhance my web development skills and help me deliver better solutions for my clients. 
+                I'm passionate about web development and always looking for new challenges and opportunities to grow as a professional. 
+                If you're interested in working with me or want to know more about my skills and projects, please feel free to contact me at [email address]. Thank you for your time and consideration..
+
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                <p class="tab-links" onclick="opentab('education')">Education </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li> <span>Web Development </span> <br>Developing Fullstack Web App, Deployment and Maintainance</li>
+                    <li> <span>Frontend Development </span> <br> Analysing and Designing interactive dashboard </li>
+                    <li> <span>Database Management </span> <br> Building and Maintaining secure database for Web APP</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li> <span>2022 - Present || TCN </span> <br> Web Developer Intern</li>
+                    <li> <span>2021 - Chassis Limited </span> <br> Wordpress Developer </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li> <span>2023 Udemy Web Master Course</span> <br>Web App Development </li>
+                    <li> <span>2022 BSc Computer Science</span> <br> Nigerian Army University </li>
+                    <li> <span>2016 Udemy Course </span> <br> Building Andriod/IOS App home</li>
+                </ul>
+            </div>
+
+
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- Service Section-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development </h2>
+                    <p> Supercharge your online presence with our Web Development. Customized websites, cutting-edge technologies,
+                         and ongoing support to elevate your brand to new heights.
+                    </p>
+                    <a href="#"> Learn More</a>   
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p> Unleash captivating user experiences with our UI/UX Design. Tailored interfaces, seamless interactions,
+                         and visually stunning designs that leave a lasting impression. 
+                        Elevate your brand's online presence with our expertly crafted UI/UX solutions.
+                    </p>
+                    <a href="#"> Learn More</a>   
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p> Ignite your business with our App Development. Transform your ideas into powerful, 
+                        intuitive mobile applications that engage and captivate users. 
+                         Unlock new possibilities and drive success with our cutting-edge app development solutions.
+                    </p>
+                    <a href="#"> Learn More</a>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3> Deparmental Portal</h3>
+                        <p>"Empowering the Minds of Future Innovators: Explore the Cutting-Edge Computer Science Portal of Nigerian Army University Biu!"</p>
+                        <a href="https://github.com/cyber-sly/school_portal"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3> Mechville App</h3>
+                        <p>the App connects you drivers, car owners and mechanic around the world. coming soon on playstore</p>
+                        <a href="https://github.com/cyber-sly/school_portal"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3> Study Buddy</h3>
+                        <p>the app connects you with talaented people around the world. download it on playstore</p>
+                        <a href="https://github.com/cyber-sly"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/cyber-sly" class="btn"> See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>professorademola1@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+234-8143718035</p>
+                    <div class="social-icons">
+                        <a href=" https://www.facebook.com/adetox.sly"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/SlyAdetox"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/deghostlord"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adeyele-ayodeji-92591023b"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Adeyele Ayodeji CV.pdf" download class="btn btn2">Download my CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @GTech Hub. Made with <i class="fas fa-heart"></i> GTECH HUB </p>
+        </div>
+    </div>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link"); 
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab"); 
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxoIrXyg6W3h1bUi-NnIXPMlYjAUUgpXoPpbypErmZLS3NRQ7LTw-pxNDV8hTMXFihcZg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Succefully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  </body>
+</html>
